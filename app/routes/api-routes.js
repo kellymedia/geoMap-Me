@@ -34,6 +34,9 @@ module.exports = function(app) {
     Chirp.create({
       author: req.body.author,
       body: req.body.body,
+      tag: req.body.tag,
+      lat: req.body.latitude,
+      lon: req.body.longitude,
       created_at: req.body.created_at
     }).then(function(results) {
       // `results` here would be the newly created chirp
