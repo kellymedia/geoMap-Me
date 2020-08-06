@@ -1,29 +1,3 @@
-/* Color Palette: https://coolors.co/001524-15616d-ffecd1-ff7d00-78290f */
-
-form {
-  border: #15616D !important;
-}
-
-.mapMe {
-  padding: 10px;
-  margin: 10px;
-  background-color: red;
-}
-
-#map {
-  min-height: 300px;
-  min-width: auto;
-}
-
-#footer-link {
-  color:rgb(45, 55, 72);
- 
-}
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 .chirp {
   padding: 10px;
   margin: 10px;
