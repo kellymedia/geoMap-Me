@@ -10,9 +10,6 @@ var sequelize = require("../config/connection.js");
 var Chirp = sequelize.define("chirp", {
   author: Sequelize.STRING,
   body: Sequelize.STRING,
-  tag: Sequelize.STRING,
-  latitude: Sequelize.INTEGER,
-  longitude: Sequelize.INTEGER,
   created_at: Sequelize.DATE
 });
 

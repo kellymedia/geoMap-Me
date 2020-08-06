@@ -1,19 +1,32 @@
 {
-  "name": "chirpy-sequelize",
+  "name": "GeoMapMe",
   "version": "1.0.0",
-  "description": "",
+  "description": "Geolocate your location and share it with the community.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kellymedia/g4p2.git"
+  },
   "main": "server.js",
+  "dependencies": {
+    "autoprefixer": "^9.8.6",
+    "express": "^4.16.3",
+    "handlebars": "^4.7.6",
+    "mapbox-gl": "^1.11.1",
+    "mysql2": "^1.6.4",
+    "sequelize": "^4.41.2",
+    "tailwindcss": "^1.6.1"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "watch": "nodemon server.js"
+    "watch": "nodemon server.js",
+    "build:css": "postcss src/tailwind.css -o static/dist/tailwind.css"
   },
+  "bugs": {
+    "url": "https://github.com/kellymedia/g4p2/issues"
+  },
+  "homepage": "https://github.com/kellymedia/g4p2#readme",
   "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.16.3",
-    "mysql2": "^1.6.4",
-    "sequelize": "^4.41.2"
-  }
+  "author": ""
 }
