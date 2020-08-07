@@ -34,9 +34,11 @@ module.exports = function(app) {
     newMap.create({
       author: req.body.author,
       body: req.body.body,
+      latitude: req.body.latitude,
+      longitude: req.body.longitude,
       created_at: req.body.created_at
     }).then(function(results) {
-      // `results` here would be the newly created chirp
+      // `results` here would be the newly created Map location and comment.
       res.end();
     });
 
