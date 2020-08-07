@@ -10,8 +10,8 @@ var sequelize = require("../config/connection.js");
 var MapMe = sequelize.define("mapMe", {
   author: Sequelize.STRING,
   body: Sequelize.STRING,
-//   latitude: Sequelize.INTEGER,
-//   longitude: Sequelize.INTEGER,
+  latitude: Sequelize.INTEGER,
+  longitude: Sequelize.INTEGER,
   created_at: Sequelize.DATE
 });
 
