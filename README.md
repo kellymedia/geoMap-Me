@@ -8,7 +8,8 @@ This web app allows users to save their favorite locations for themselves and th
 
 
 ## Sources
-https://tailwindcss.com/ /
+https://tailwindcss.com/ 
+https:handlebarsjs.com/
 
 
 ## Demo
@@ -25,7 +26,7 @@ This image demonstrates the app functionality:
 Click here to view the [presentation slide deck](linkforpresentation).
 
 ## Collaborators
-[Michael Kelly](https://github.com/kellymedia)
+[Michael Kelly](https://github.com/kellymedia)      
 [Jacob Sifodaskalakis](https://github.com/jakesifo)  
 [Scott St. Germain](https://github.com/Scott7710)  
 [Danny Talmont](https://github.com/dantalmont)
