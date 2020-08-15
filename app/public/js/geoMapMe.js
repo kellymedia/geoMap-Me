@@ -1,14 +1,17 @@
 console.log("CONNECTED!");
 
 /* global moment */
+// const moment = require("moment");
 
 function errorCallback(position) {
   alert("Oops! Please go to your settings and allow us to use your location.");
 }
 
 // When user clicks form button
-  $("#mapMe-submit").on("click", function(event) {
+  $("#geoMap-form").on("submit", function(event) {
     event.preventDefault();
+
+    console.log("test");
 
     navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
   
@@ -25,7 +28,7 @@ function errorCallback(position) {
         created_at: moment().format("YYYY-MM-DD HH:mm:ss")
       };
   
-      console.log(newMap);
+      // console.log(newMap);
     
       // Send an AJAX POST-request with jQuery
       $.post("/api/new", newMap)
@@ -37,11 +40,12 @@ function errorCallback(position) {
     
           row.append("<p>" + newMap.author + " Mapped: </p>");
           row.append("<p>" + newMap.body + "</p>");
-          row.append("<p>" + newChirp.latitude + "</p>");
-          row.append("<p>" + newChirp.longitude + "</p>");
+          row.append("<p>" + newMap.latitude + "</p>");
+          row.append("<p>" + newMap.longitude + "</p>");
           row.append("<p>At " + moment(newMap.created_at).format("h:mma on dddd") + "</p>");
     
           $("#map-area").prepend(row);
+          //add one marker with new map.lat/lon
     
         });
     
@@ -69,6 +73,11 @@ function errorCallback(position) {
         row.append("<p>At " + moment(data[i].created_at).format("h:mma on dddd") + "</p>");
   
         $("#map-area").prepend(row);
+
+//         //create marker
+//        var marker = new mapboxgl.Marker()
+//        .setLngLat([30.5, 50.5])
+//        .addTo(map); // add the marker to the map
   
       }
   

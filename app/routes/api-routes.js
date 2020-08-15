@@ -6,7 +6,6 @@
 // =============================================================
 var newMap = require("../models/geoMapMe.js");
 
-
 // Routes
 // =============================================================
 module.exports = function(app) {
@@ -38,8 +37,11 @@ module.exports = function(app) {
       longitude: req.body.longitude,
       created_at: req.body.created_at
     }).then(function(results) {
+      console.log("result:", results);
       // `results` here would be the newly created Map location and comment.
       res.end();
+    }).catch(function(err){
+      console.log("error:", err);
     });
 
   });
