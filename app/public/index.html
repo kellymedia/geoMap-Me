@@ -375,13 +375,29 @@
 </script>
 
 <script>
+
+navigator.geolocation.getCurrentPosition(function(pos) {
+	var lat = pos.coords.latitude;
+	var lon = pos.coords.longitude;
+	
+	console.log('pos', pos.coords)
 	mapboxgl.accessToken = 'pk.eyJ1Ijoia2VsbHlkb3RtZWRpYSIsImEiOiJja2Q4d3hzaWYwNjkwMnNxcmVyNGFuOWw0In0.BeUs5iiCRf9_yGnohqgbHA';
     var map = new mapboxgl.Map({
         container: 'map', // container id
         style: 'mapbox://styles/mapbox/streets-v11', // stylesheet location
         center: [-72.5, 41.6 ], // starting position [lng, lat]
         zoom: 6 // starting zoom
-    });
+    }); 
+
+//adding coordinates and default marker for current locations
+var marker = new mapboxgl.Marker()
+		.setLngLat([lon, lat ])
+		.addTo(map);
+
+	
+});
+
+
 </script>
 
 </body>
