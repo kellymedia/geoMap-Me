@@ -20,7 +20,7 @@
     <!--Replace with your tailwind.css once created-->
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
-    <script type="text/javascript" src="./js/geoMapMe.js"></script>
+    
     <!-- Define your gradient here - use online tools to find a gradient matching your branding-->
     <style>
         .gradient {
@@ -105,7 +105,7 @@
 		<div class="flex flex-wrap">
             <div class="w-5/6 sm:w-1/2 p-6">
                 <div class="w-full max-w-lg">
-                    <form class="gradient text-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+                    <form class="gradient text-white shadow-md rounded px-8 pt-6 pb-8 mb-4" id="geoMap-form">
                       
                         <label class="block text-white text-sm font-bold mb-2" for="author">
                           Your Name:
@@ -116,11 +116,11 @@
                         <label class="block text-white text-sm font-bold mb-2" for="message">
                           Your Message:
                         </label>
-                        <input class="cursor-text shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="chirp-box" type="text" placeholder="Best Sunsets!">
+                        <input class="cursor-text shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="map-box" type="text" placeholder="Best Sunsets!">
                         <!-- <p class="text-red-500 text-xs italic">Please enter a custom message for you marker</p> -->
                      
                       
-                        <button class="mx-auto lg:mx-0 bg-white hover:bg-red-600 text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg" id="chirp-submit">geoMap Me</button>  
+                        <button class="mx-auto lg:mx-0 bg-white hover:bg-red-600 text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg" id="mapMe-submit">geoMap Me</button>  
                         <!-- <button class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg" id="geoMapMe-submit">geoMap Me</button> -->
                      
                     </form>
@@ -399,7 +399,8 @@ var marker = new mapboxgl.Marker()
 
 
 </script>
-
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+<script type="text/javascript" src="./js/geoMapMe.js"></script>
 </body>
 
 </html>
