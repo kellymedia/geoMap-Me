@@ -5,7 +5,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/kellymedia/g4p2.git"
+    "url": "https://github.com/kellymedia/geoMap-Me"
   },
   "main": "server.js",
   "dependencies": {
@@ -25,9 +25,9 @@
     "build:css": "postcss src/tailwind.css -o static/dist/tailwind.css"
   },
   "bugs": {
-    "url": "https://github.com/kellymedia/g4p2/issues"
+    "url": "https://github.com/kellymedia/geoMap-Me/issues"
   },
-  "homepage": "https://github.com/kellymedia/g4p2#readme",
+  "homepage": "https://geomap-me.herokuapp.com/",
   "keywords": [],
   "author": ""
 }
