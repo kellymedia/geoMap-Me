@@ -4,7 +4,7 @@
 
 // Dependencies
 // =============================================================
-var newMap = require("../models/geoMapMe.js");
+var MapMe = require("../models/mapMe.js");
 
 // Routes
 // =============================================================
@@ -17,20 +17,20 @@ module.exports = function(app) {
     // Sequelize queries are asynchronous, which helps with perceived speed.
     // If we want something to be guaranteed to happen after the query, we'll use
     // the .then function
-    newMap.findAll({}).then(function(results) {
+    MapMe.findAll({}).then(function(results) {
       // results are available to us inside the .then
       res.json(results);
     });
 
   });
 
-  // Add a chirp
+  // Add a to map feed
   app.post("/api/new", function(req, res) {
 
     console.log("Map Data:");
     console.log(req.body);
 
-    newMap.create({
+    MapMe.create({
       author: req.body.author,
       body: req.body.body,
       latitude: req.body.latitude,
