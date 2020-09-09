@@ -5,7 +5,7 @@ var Sequelize = require("sequelize");
 if(process.env.JAWSDB_URL){
 sequelize = new Sequelize(process.env.JAWSDB_URL, {});  
 }else {
-var sequelize = new Sequelize("sequelize_geoMap", "root", null, {
+var sequelize = new Sequelize("sequelize_geoMap", "root", "null", {
   host: "localhost",
   port: 3306,
   dialect: "mysql",
