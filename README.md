@@ -3,7 +3,7 @@
 ## Description
 This app lets the user tag their favorite locations on a map and allows users to see the favorite locations of other users.
 
-The user provides permission to share their location data provided by the device thwy are using. The latitude and longitude of their location is combined with provided name and custom message. The data is shared in the database and is added to all of the other previous markers. 
+The user provides permission to share their location data provided by the device they are using. The latitude and longitude of their location is combined with provided name and custom message. The data is shared in the database and is added to all of the other previous markers. 
 
 [![App Screenshot](./public/img/screenshot.png "mapping app screenshot")](https://geomap-me.herokuapp.com/)
 
