@@ -15,7 +15,7 @@
     "handlebars": "^4.7.6",
     "install": "^0.13.0",
     "mapbox-gl": "^1.11.1",
-    "moment": "^2.27.0",
+    "moment": "^2.29.2",
     "mysql": "^2.18.1",
     "mysql2": "^1.6.4",
     "sequelize": "^4.41.2",
